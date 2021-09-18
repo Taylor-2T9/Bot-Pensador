@@ -9,7 +9,7 @@ Primeiro passo: Você precisa ir no https://discord.com/developers e criar uma a
 Segundo passo: Ponha o seu token em bot.login('Your_Token') no index.js.
 
 Terceiro passo: Abra o cmd, no caminho do diretório do bot e execute com
-$node .
+$ node .
 
 Pronto, o seu bot está ativo.
 
