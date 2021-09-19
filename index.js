@@ -1,8 +1,8 @@
 const { Client, Intents } = require('discord.js')
 const bot = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.DIRECT_MESSAGES, Intents.FLAGS.GUILD_MESSAGES ] })
-const config = require('../config.json')
+const config = require('./config.json')
 
-bot.login('Your_Token')
+bot.login('ODg4OTA3OTA4NjYwNzM2MDkw.YUZiAA.M64a7OjhgDS1lwPtpW7V4AGCtBs')
 
 console.log('Estou pronto!')
 
@@ -12,7 +12,7 @@ bot.on('messageCreate', async message => {
         const chosenAuthor = args[0]
         if (chosenAuthor === 'random') {
             try {
-                const commandFile = require('../commands/randomPhrase.js')
+                const commandFile = require('./commands/randomPhrase.js')
                 delete require.cache[require.resolve('./commands/randomPhrase.js')]
                 return (commandFile.run(message))
             }
@@ -21,7 +21,7 @@ bot.on('messageCreate', async message => {
             }
         } else {
             try {
-                const commandFile = require('../commands/searchAuthor.js')
+                const commandFile = require('./commands/searchAuthor.js')
                 delete require.cache[require.resolve('./commands/searchAuthor.js')]
                 return (commandFile.run(message, args))
             } catch (error) {
