@@ -2,7 +2,7 @@ const { Client, Intents } = require('discord.js')
 const bot = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.DIRECT_MESSAGES, Intents.FLAGS.GUILD_MESSAGES ] })
 const config = require('./config.json')
 
-bot.login('ODg4OTA3OTA4NjYwNzM2MDkw.YUZiAA.M64a7OjhgDS1lwPtpW7V4AGCtBs')
+bot.login('Your_Token')
 
 console.log('Estou pronto!')
 
